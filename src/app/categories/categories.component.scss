@@ -1,0 +1,71 @@
+//@import '../shared/globals';
+
+.carousel-item{
+  img{
+    max-height: 500px;
+    opacity: 0.4;
+  }
+}
+
+.carousel-caption{
+  h5{
+    color:rgb(211, 206, 206);
+    text-shadow: 4px 0px 8px #030303;;
+    font-size: 42px;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.carousel-indicators{
+  button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}
+
+.welcome{
+  text-align: center;
+  margin-bottom: 100px;
+  h6{
+    font-family: "Petit Formal Script", Sans-serif;
+    margin-top: 50px;
+  }
+  h3{
+    color: #67696B;
+    margin-top: 15px;
+    span{
+      font-weight: 600;
+    }
+  }
+  h4{
+    margin-top: 20px;
+  }
+}
+
+.categories-container{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: space-between;
+  grid-row-gap: 30px;
+
+  .card{
+    img{
+      max-height: 160px;
+    }
+    .card-body{
+      text-align: center;
+      color: #72B19E;
+    }
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 3px 3px rgb(70, 69, 69);
+  }
+}
+

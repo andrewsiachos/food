@@ -1,0 +1,11 @@
+@import '../shared/globals';
+
+.store{
+  border: 1px solid black;
+  width: 90%;
+  margin: 100px auto;
+}
+
+.store-info{
+  display:flex;
+}

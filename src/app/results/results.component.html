@@ -1,0 +1,15 @@
+<div class="results-container">
+  <h5>Έχετε επιλέξει: {{selectedName}} </h5>
+  <h5>Βρέθηκαν {{resultsAmount}} καταστήματα</h5>
+
+  <ul class="list-group results">
+    <li class="list-group-item result-item" *ngFor='let i of results' (click)='onSelectStore(i)'>
+      <div class="result-image">
+        <img [src]="i.image" class="img-fluid" style='max-height: 70px; max-width: 70px;'>
+      </div>
+      <div class="result-name">{{i.name}} </div>
+      <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+    </li>
+  </ul>
+
+</div>

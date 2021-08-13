@@ -1,0 +1,28 @@
+footer{
+  padding: 15px;
+  margin-top: 50px;
+  background-color: #7a7a7a;
+  color: #f6f6f6;
+
+  .terms{
+    display: flex;
+    justify-content: center;
+    h6{
+      padding-right: 10px;
+      &:not(:last-child){
+        border-right: 1px solid #f6f6f6;
+      }
+      &:not(:first-child){
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .copyright{
+    text-align: center;
+    p{
+      margin: 0;
+    }
+  }
+
+}

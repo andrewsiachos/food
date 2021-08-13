@@ -1,0 +1,41 @@
+@import '../shared/globals';
+
+.results-container{
+  width: 90%;
+  margin: 50px auto;
+}
+
+.results{
+  margin-top: 50px;
+  .result-item{
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    .result-image{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        border-radius: 50%;
+      }
+    }
+
+    .result-name{
+      margin-left: 20px;
+    }
+
+    .arrow{
+      margin-left: 80%;
+      visibility: hidden;
+    }
+  }
+
+  .result-item:hover{
+    .arrow{
+      visibility: visible;
+    }
+  }
+}
