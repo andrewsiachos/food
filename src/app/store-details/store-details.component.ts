@@ -8,12 +8,13 @@ import { FoodService } from '../food.service';
 })
 export class StoreDetailsComponent implements OnInit {
 
-  store:{name: string, image: string} = {name:'ψησταριά', image:'../../assets/images/psistaria.jpg'};
+  store:{name: string, image: string} = {name:'', image:''};
+  storeItems = ['αντικείμενο1', 'αντικείμενο2', 'αντικείμενο3', 'αντικείμενο4', 'αντικείμενο5'];
   constructor(private food: FoodService) { }
 
   ngOnInit(): void {
-    //this.store = this.food.selectedStore;
-    //console.log(this.store);
+    this.store = this.food.selectedStore;
+    console.log(this.store);
   }
 
 }

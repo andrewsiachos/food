@@ -6,11 +6,13 @@ header{
   .logo-container{
     width: 90%;
     margin: auto;
+    cursor: pointer;
     img{
       display: block;
       max-width: 500px;
       width: 200px;
       height: 200px;
+
     }
   }
 }

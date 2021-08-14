@@ -69,3 +69,10 @@
   }
 }
 
+
+@media(max-width: 760px){
+  .categories-container{
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+}

@@ -21,6 +21,6 @@ export class CategoriesComponent implements OnInit {
 
   onSelectCategory(type:string, name: string){
     this.food.categoryType(type, name);
-    this.router.navigate(['results','type']);
+    this.router.navigate(['results',type]);
   }
 }

@@ -1,11 +1,21 @@
 <div class="store">
   <div class="store-info">
     <div class="store-image">
-      <img [src]="store.image" alt="" class="img-fluid">
+      <img [src]="store.image" alt="">
     </div>
 
     <div class="store-name">
-      {{store.name}}
+      <h5>{{store.name}}</h5>
     </div>
+  </div>
+
+
+  <div class="store-products">
+    <h4>Προϊόντα</h4>
+    <ul>
+      <li *ngFor='let i of storeItems'>
+        {{i}}
+      </li>
+    </ul>
   </div>
 </div>
