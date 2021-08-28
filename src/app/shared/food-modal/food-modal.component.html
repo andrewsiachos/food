@@ -1,0 +1,13 @@
+<div class="backdrop" (click)='closeModal()'></div>
+<div class="item-modal">
+  <h4>{{food.name}} </h4>
+  <h5 style="margin-top: 15px;">{{price}} €</h5>
+  <div class="item-modal-actions">
+    <div class="adjustment-buttons">
+      <button class="adjust" (click)='decrement()'>-</button>
+      <div class="quantity">{{quantity}} </div>
+      <button class="adjust" (click)='increment()'>+</button>
+    </div>
+    <button class="confirm btn btn-primary" (click)='sendToBasket()'>Επιβεβαίωση</button>
+  </div>
+</div>

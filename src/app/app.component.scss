@@ -2,10 +2,14 @@
 
 header{
   background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 80px;
+
 
   .logo-container{
-    width: 90%;
-    margin: auto;
     cursor: pointer;
     img{
       display: block;

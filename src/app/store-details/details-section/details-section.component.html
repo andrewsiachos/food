@@ -1,0 +1,12 @@
+<div class="details-section">
+  <h3>{{product.title}} </h3>
+  <hr>
+  <p class="detail-comment" *ngIf='product.comment!=""'>{{product.comment}}</p>
+  <ul>
+    <li *ngFor='let x of product.items' (click)='selectItem(x.name, x.price, x.comment)'>
+      <div><p>{{x.name}} </p><p>{{x.price}}</p></div>
+      <p class="item-comment" *ngIf='x.comment!=""'>{{x.comment}} </p>
+    </li>
+
+  </ul>
+</div>

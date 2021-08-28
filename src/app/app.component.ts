@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FoodService } from './food.service';
 
 
 @Component({
@@ -9,14 +10,19 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit{
   title = 'food';
-  constructor(private router: Router){}
+  myProducts:any = [];
+  constructor(private router: Router, private food:FoodService){}
 
   ngOnInit(){
-
+    this.myProducts = this.food.storeProducts;
   }
 
   navigateHome(){
     this.router.navigate(['']);
+  }
+
+  toBasket(){
+    this.router.navigate(['/basket']);
   }
 
 }

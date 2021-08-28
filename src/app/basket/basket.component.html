@@ -1,0 +1,46 @@
+<div class="basket">
+  <h3>Το Καλάθι μου</h3>
+  <h5 *ngIf='basketOrder.length == 0'>Το καλάθι είναι άδειο</h5>
+
+
+  <div *ngIf='basketOrder.length != 0'>
+    <ul *ngIf='basketOrder.length != 0'>
+      <li *ngFor='let i of basketOrder'>
+        <div>{{i.name}}   <span class="finalQuantity">X {{i.quantity}}</span></div>
+
+        <p>{{i.price}} €</p>
+      </li>
+    </ul>
+
+
+    <div>
+      <h3>Σύνολο: {{(totalPrice)}} €</h3>
+    </div>
+
+
+    <div class="payment">
+      <div>Κουπόνι</div>
+
+      <h5>Τρόπος Πληρωμής:</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+        <label class="form-check-label" for="flexRadioDefault1">
+          Μετρητά
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Κάρτα
+        </label>
+      </div>
+    </div>
+
+    <button class="send btn btn-success">Αποστολή Παραγγελίας</button>
+  </div>
+
+</div>
+
+
+
+

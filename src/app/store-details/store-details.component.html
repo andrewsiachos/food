@@ -10,12 +10,6 @@
   </div>
 
 
-  <div class="store-products">
-    <h4>Προϊόντα</h4>
-    <ul>
-      <li *ngFor='let i of storeItems'>
-        {{i}}
-      </li>
-    </ul>
-  </div>
+  <app-details-section *ngFor='let i of currentStoreProducts' [product]='i' (selectedItem)='handleSelectedItem($event)'></app-details-section>
+  <app-food-modal [food]='itemForBasket' *ngIf='show' (close)='handleClose()'></app-food-modal>
 </div>

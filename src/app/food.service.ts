@@ -84,6 +84,86 @@ export class FoodService {
     }
   ];
 
+  storeProducts = [
+    {
+      title:'Προσφορές',
+      comment:'',
+      items:[
+        {
+          name:'Με 1 combo classic burger, δώρο ακόμη 1',
+          price: '7.30€',
+          comment:''
+        },
+        {
+          name:'3 Τυλιχτά, 1 μερίδα πατάτες & 1 Coca-Cola 500ml',
+          price: '11.10€',
+          comment:''
+        },
+        {
+          name:'2 Τυλιχτά, 1 μερίδα πατάτες & 1 Coca-Cola 330ml',
+          price: '8,49€',
+          comment:''
+        },
+        {
+          name:'2 Τυλιχτά με καλαμάκι κοτόπουλο μπούτι & 1 αναψυκτικό 330ml',
+          price: '5.00€',
+          comment:''
+        },
+        {
+          name:'1 Classic burger με πατάτες τηγανητές & συνοδευτική σως (+1 αναψυκτικό 330ml)',
+          price: '5.00€',
+          comment:''
+        },
+      ]
+    },
+    {
+      title:'Πίτες...Χειροποίητες',
+      comment:'Χειροποίητα & φρέσκα',
+      items:[
+        {
+          name:'Πιτάκια Καλαμποκιού',
+          price:'1.00€',
+          comment:'3 τεμάχια'
+        },
+        {
+          name:'Πιτάκια Ολικής Άλεσης',
+          price:'1.00€',
+          comment:'3 τεμάχια'
+        },
+        {
+          name:'Πίτα Καλαμποκιού',
+          price:'0.50€',
+          comment:''
+        },
+        {
+          name:'Πίτα Ολικής Άλεσης',
+          price:'0.50€',
+          comment:''
+        },
+        {
+          name:'Πίτα Κυπριακή',
+          price:'0.50€',
+          comment:''
+        },
+        {
+          name:'Πίτα Παραδοσιακή',
+          price:'0.50€',
+          comment:''
+        },
+        {
+          name:'Πίτα Σάντουιτς',
+          price:'0.50€',
+          comment:''
+        },
+        {
+          name:'Θρακόψωμο',
+          price:'1.00',
+          comment:''
+        },
+      ]
+    }
+  ]
+
 
 
   selectedStores:any = [];

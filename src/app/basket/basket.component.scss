@@ -1,0 +1,29 @@
+.basket{
+  width: 80%;
+  margin: 50px auto;
+  ul{
+    margin-top: 15px;
+    list-style-type: none;
+    li{
+      padding: 10px 0;
+      border-bottom: 1px solid rgb(196, 195, 195);
+    }
+  }
+}
+
+.finalQuantity{
+  margin-left: 10%;
+}
+
+.payment{
+  margin-top: 20px;
+  border-top:1px solid rgb(197, 197, 197);
+  border-bottom:1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  padding: 10px 0;
+}
+.send{
+  display: block;
+  width: 40%;
+  margin: 15px auto;
+}

@@ -1,0 +1,27 @@
+
+.details-section{
+  padding:10px;
+
+  ul{
+    list-style-type: none;
+    li{
+      width: 80%;
+      padding: 10px;
+      border-bottom: 1px solid #f7f7f7;
+      cursor: pointer;
+      div{
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      p{
+        margin: 0;
+      }
+    }
+  }
+}
+
+.detail-comment, .item-comment{
+  color: #cdcdcd;
+}

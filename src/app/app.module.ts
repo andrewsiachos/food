@@ -8,6 +8,9 @@ import { CategoriesComponent } from './categories/categories.component';
 import { ResultsComponent } from './results/results.component';
 import { StoreDetailsComponent } from './store-details/store-details.component';
 import { FooterComponent } from './footer/footer.component';
+import { DetailsSectionComponent } from './store-details/details-section/details-section.component';
+import { FoodModalComponent } from './shared/food-modal/food-modal.component';
+import { BasketComponent } from './basket/basket.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { FooterComponent } from './footer/footer.component';
     CategoriesComponent,
     ResultsComponent,
     StoreDetailsComponent,
-    FooterComponent
+    FooterComponent,
+    DetailsSectionComponent,
+    FoodModalComponent,
+    BasketComponent
   ],
   imports: [
     BrowserModule,

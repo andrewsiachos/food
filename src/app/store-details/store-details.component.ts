@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BasketService } from '../basket.service';
 import { FoodService } from '../food.service';
 
 @Component({
@@ -9,12 +10,26 @@ import { FoodService } from '../food.service';
 export class StoreDetailsComponent implements OnInit {
 
   store:{name: string, image: string} = {name:'', image:''};
-  storeItems = ['αντικείμενο1', 'αντικείμενο2', 'αντικείμενο3', 'αντικείμενο4', 'αντικείμενο5'];
+  currentStoreProducts:any = [];
+  show:boolean = false;
+  itemForBasket:{name: string, price: string} = {name: '', price:''};
   constructor(private food: FoodService) { }
 
   ngOnInit(): void {
     this.store = this.food.selectedStore;
-    console.log(this.store);
+    this.currentStoreProducts = this.food.storeProducts;
+  }
+
+  handleClose(){
+    this.show = false;
+  }
+
+  handleSelectedItem(event:any){
+    this.show = true;
+    this.itemForBasket = {
+      name: event.selectedName,
+      price: event.selectedPrice
+    };
   }
 
 }

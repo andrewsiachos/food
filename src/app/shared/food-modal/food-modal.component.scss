@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button{
+  display: block;
+  padding: 7px;
+}
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 50;
+}
+
+.item-modal{
+  position: fixed;
+  top: 30vh;
+  left: 20vw;
+  width: 60vw;
+  padding: 16px;
+  z-index: 100;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.adjustment-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  .adjust{
+    border: none;
+  }
+  .quantity{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.confirm{
+  margin: 15px auto;
+  border:none;
+  border-radius: 8px;
+
+}
